@@ -3,7 +3,7 @@ This package aims to provide support for async routes resolving for React Router
 Use async function to provide declarative router routes.
 
 Async routes resolving can be helpful if routes declaration is unknown during
-compilation time and can only be resolved during runtime.
+compilation and can only be resolved during runtime.
 
 
 ## Install 
@@ -49,7 +49,7 @@ ReactDOM.render(
 that can be later used for `<Router>` component.
 
 ```js
-import { AsyncRoutesResolverContext } from '@iamok/react-async-routes';
+import { withAsyncRoutes } from '@iamok/react-async-routes';
 
 class Router extends React.PureComponent {
     static contextType = AsyncRoutesResolverContext;
@@ -76,7 +76,7 @@ class Router extends React.PureComponent {
     }
 }
 
-export default withRouter(Router);
+export default withAsyncRoutes(withRouter(Router));
 ```
 
 #### Server side

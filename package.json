@@ -1,6 +1,6 @@
 {
-  "name": "react-library-template",
-  "version": "0.1.0",
+  "name": "@iamok/react-async-routes",
+  "version": "1.0.0",
   "main": "build/index.js",
   "files": [
     "build"

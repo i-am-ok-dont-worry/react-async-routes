@@ -8,9 +8,11 @@
       "dom.iterable",
       "esnext"
     ],
+    "strictNullChecks": false,
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
